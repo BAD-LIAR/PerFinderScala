@@ -1,0 +1,21 @@
+version: '3'
+
+volumes:
+  pgdata:
+
+services:
+  db:
+    container_name: db
+    image: postgres:13
+    restart: on-failure
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Qwerty007
+      POSTGRES_DB: petFinder
+      PGGSSENCMODE: disable
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - default

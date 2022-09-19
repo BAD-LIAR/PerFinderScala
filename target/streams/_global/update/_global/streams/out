@@ -1,0 +1,125 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ...
+[debug] Done updating 
+[error] java.lang.RuntimeException: found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
+[error] 
+[error] 	* org.http4s:http4s-dsl_2.13:0.23.1 (early-semver) is selected over 0.21.28
+[error] 	    +- perfinderscala:perfinderscala_2.13:0.0.1-SNAPSHOT  (depends on 0.23.1)
+[error] 	    +- io.github.jmcardon:tsec-http4s_2.13:0.4.0          (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-dsl_2.13:0.21.28                 (depends on 0.21.28)
+[error] 
+[error] 	* co.fs2:fs2-core_2.13:3.1.0 (early-semver) is selected over {2.2.2, 2.5.6}
+[error] 	    +- org.http4s:http4s-core_2.13:0.23.1                 (depends on 3.1.0)
+[error] 	    +- co.fs2:fs2-io_2.13:3.1.0                           (depends on 3.1.0)
+[error] 	    +- org.tpolecat:doobie-free_2.13:0.13.4               (depends on 2.5.6)
+[error] 	    +- org.http4s:jawn-fs2_2.13:1.0.0                     (depends on 2.2.2)
+[error] 
+[error] 	* org.http4s:http4s-core_2.13:0.23.1 (early-semver) is selected over {0.21.28}
+[error] 	    +- org.http4s:http4s-dsl_2.13:0.21.28                 (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-server_2.13:0.23.1               (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-jawn_2.13:0.21.28                (depends on 0.21.28)
+[error] 	    +- org.http4s:http4s-circe_2.13:0.21.28               (depends on 0.21.28)
+[error] 	    +- org.http4s:http4s-blaze-core_2.13:0.21.28          (depends on 0.21.28)
+[error] 
+[error] 	* org.typelevel:cats-effect_2.13:3.2.2 (early-semver) is selected over {3.1.1, 2.5.1, 3.2.1}
+[error] 	    +- co.fs2:fs2-core_2.13:3.1.0                         (depends on 3.2.2)
+[error] 	    +- org.typelevel:vault_2.13:3.0.4                     (depends on 3.2.1)
+[error] 	    +- org.tpolecat:doobie-free_2.13:0.13.4               (depends on 2.5.1)
+[error] 	    +- com.comcast:ip4s-core_2.13:3.0.3                   (depends on 3.1.1)
+[error] 
+[error] 	* org.http4s:http4s-server_2.13:0.23.1 (early-semver) is selected over 0.21.28
+[error] 	    +- io.github.jmcardon:tsec-http4s_2.13:0.4.0          (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-blaze-server_2.13:0.21.28        (depends on 0.21.28)
+[error] 
+[error] 	* co.fs2:fs2-io_2.13:3.1.0 (early-semver) is selected over {3.0.3, 2.5.6}
+[error] 	    +- org.http4s:http4s-core_2.13:0.23.1                 (depends on 3.1.0)
+[error] 	    +- org.tpolecat:doobie-postgres_2.13:0.13.4           (depends on 2.5.6)
+[error] 	    +- io.github.jmcardon:tsec-signatures_2.13:0.4.0      (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-password_2.13:0.4.0        (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-mac_2.13:0.4.0             (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-jwt-sig_2.13:0.4.0         (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-jwt-mac_2.13:0.4.0         (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-jwt-core_2.13:0.4.0        (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-http4s_2.13:0.4.0          (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-hash-jca_2.13:0.4.0        (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-common_2.13:0.4.0          (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-cipher-jca_2.13:0.4.0      (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-cipher-core_2.13:0.4.0     (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-bouncy_2.13:0.4.0          (depends on 3.0.3)
+[error] 
+[error] 
+[error] this can be overridden using libraryDependencySchemes or evictionErrorLevel
+[error] 	at scala.sys.package$.error(package.scala:30)
+[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:89)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)
+[error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)
+[error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)
+[error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)
+[error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)
+[error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3688)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[error] 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+[error] 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[error] 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[error] 	at java.base/java.lang.Thread.run(Thread.java:834)
+[error] (update) found version conflict(s) in library dependencies; some are suspected to be binary incompatible:
+[error] 
+[error] 	* org.http4s:http4s-dsl_2.13:0.23.1 (early-semver) is selected over 0.21.28
+[error] 	    +- perfinderscala:perfinderscala_2.13:0.0.1-SNAPSHOT  (depends on 0.23.1)
+[error] 	    +- io.github.jmcardon:tsec-http4s_2.13:0.4.0          (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-dsl_2.13:0.21.28                 (depends on 0.21.28)
+[error] 
+[error] 	* co.fs2:fs2-core_2.13:3.1.0 (early-semver) is selected over {2.2.2, 2.5.6}
+[error] 	    +- org.http4s:http4s-core_2.13:0.23.1                 (depends on 3.1.0)
+[error] 	    +- co.fs2:fs2-io_2.13:3.1.0                           (depends on 3.1.0)
+[error] 	    +- org.tpolecat:doobie-free_2.13:0.13.4               (depends on 2.5.6)
+[error] 	    +- org.http4s:jawn-fs2_2.13:1.0.0                     (depends on 2.2.2)
+[error] 
+[error] 	* org.http4s:http4s-core_2.13:0.23.1 (early-semver) is selected over {0.21.28}
+[error] 	    +- org.http4s:http4s-dsl_2.13:0.21.28                 (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-server_2.13:0.23.1               (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-jawn_2.13:0.21.28                (depends on 0.21.28)
+[error] 	    +- org.http4s:http4s-circe_2.13:0.21.28               (depends on 0.21.28)
+[error] 	    +- org.http4s:http4s-blaze-core_2.13:0.21.28          (depends on 0.21.28)
+[error] 
+[error] 	* org.typelevel:cats-effect_2.13:3.2.2 (early-semver) is selected over {3.1.1, 2.5.1, 3.2.1}
+[error] 	    +- co.fs2:fs2-core_2.13:3.1.0                         (depends on 3.2.2)
+[error] 	    +- org.typelevel:vault_2.13:3.0.4                     (depends on 3.2.1)
+[error] 	    +- org.tpolecat:doobie-free_2.13:0.13.4               (depends on 2.5.1)
+[error] 	    +- com.comcast:ip4s-core_2.13:3.0.3                   (depends on 3.1.1)
+[error] 
+[error] 	* org.http4s:http4s-server_2.13:0.23.1 (early-semver) is selected over 0.21.28
+[error] 	    +- io.github.jmcardon:tsec-http4s_2.13:0.4.0          (depends on 0.23.1)
+[error] 	    +- org.http4s:http4s-blaze-server_2.13:0.21.28        (depends on 0.21.28)
+[error] 
+[error] 	* co.fs2:fs2-io_2.13:3.1.0 (early-semver) is selected over {3.0.3, 2.5.6}
+[error] 	    +- org.http4s:http4s-core_2.13:0.23.1                 (depends on 3.1.0)
+[error] 	    +- org.tpolecat:doobie-postgres_2.13:0.13.4           (depends on 2.5.6)
+[error] 	    +- io.github.jmcardon:tsec-signatures_2.13:0.4.0      (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-password_2.13:0.4.0        (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-mac_2.13:0.4.0             (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-jwt-sig_2.13:0.4.0         (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-jwt-mac_2.13:0.4.0         (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-jwt-core_2.13:0.4.0        (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-http4s_2.13:0.4.0          (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-hash-jca_2.13:0.4.0        (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-common_2.13:0.4.0          (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-cipher-jca_2.13:0.4.0      (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-cipher-core_2.13:0.4.0     (depends on 3.0.3)
+[error] 	    +- io.github.jmcardon:tsec-bouncy_2.13:0.4.0          (depends on 3.0.3)
+[error] 
+[error] 
+[error] this can be overridden using libraryDependencySchemes or evictionErrorLevel
